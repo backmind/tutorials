@@ -879,21 +879,21 @@ Ahora que ya tengo el servidor montado y estoy contento, tengo muchas ganas de h
 <a name="changelog"></a>
 ###  Changelog [↑](#indice)
 - Versión 1.1R1 (27/04/2024)
- - sustituido [exa](https://github.com/ogham/exa/issues/1243) por [eza](https://github.com/eza-community/eza), tanto a la hora de instalarlo como a la hora de usarlo en los aliases de zsh.
+    - sustituido [exa](https://github.com/ogham/exa/issues/1243) por [eza](https://github.com/eza-community/eza), tanto a la hora de instalarlo como a la hora de usarlo en los aliases de zsh.
 - Versión 1.1R0 (12/12/2023)
- - Corregidas un montón de erratas
- - Añadido el comando para deshacer los privilegios para escuchar puertos bajos
- - Añadida la instalación de Network Time Protocol
- - Añadida la instalación y configuración de pi-hole
- - Añadido Unattended-Upgrades
- - Incrementada la memoria virtual de los contenedores
- - Configurado docker para usar journald system
- - Añadida una configuración de logrotate para traefik en avance
+    - Corregidas un montón de erratas
+    - Añadido el comando para deshacer los privilegios para escuchar puertos bajos
+    - Añadida la instalación de Network Time Protocol
+    - Añadida la instalación y configuración de pi-hole
+    - Añadido Unattended-Upgrades
+    - Incrementada la memoria virtual de los contenedores
+    - Configurado docker para usar journald system
+    - Añadida una configuración de logrotate para traefik en avance
 - Versión 1.0R1 (05/12/2023)
- - Corregidas un montón de erratas
- - Reformulación y explicación de parte de los procesos
+    - Corregidas un montón de erratas
+    - Reformulación y explicación de parte de los procesos
 - Versión 1.0R0 (04/12/2023)
- - Versión inicial.
+    - Versión inicial.
 
 
 
