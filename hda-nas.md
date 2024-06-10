@@ -242,21 +242,21 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 [ancla]changelog[/ancla]
 ###  Changelog
 - Versión 1.1R2 (04/12/2022)
- - Corregidas un montón de erratas
- - Añadido el hipervínculo al segundo hilo de la trilogía
+    - Corregidas un montón de erratas
+    - Añadido el hipervínculo al segundo hilo de la trilogía
 - Versión 1.1R1 (26/02/2022)
- - Corregidas un montón más de erratas
- - Reestructura de la sección SHR para hacerla más comprensible
- - Añadidas algunas referencias adicionales
+    - Corregidas un montón más de erratas
+    - Reestructura de la sección SHR para hacerla más comprensible
+    - Añadidas algunas referencias adicionales
 - Versión 1.1R0 (25/02/2022)
- - Corregidas un montón de erratas
- - Reformulación y explicación de parte de los procesos
- - Cambiada la mención del LBA por mft e inodes, para ser más específico
- - Imagen nueva sobre mft e inodes
- - Nuevas anclas a lo largo del texto y para cada imagen y tabla
- - Hipervinculadas las referencias a imágenes y tablas
+    - Corregidas un montón de erratas
+    - Reformulación y explicación de parte de los procesos
+    - Cambiada la mención del LBA por mft e inodes, para ser más específico
+    - Imagen nueva sobre mft e inodes
+    - Nuevas anclas a lo largo del texto y para cada imagen y tabla
+    - Hipervinculadas las referencias a imágenes y tablas
 - Versión 1.0R0 (24/02/2022)
- - Versión inicial.
+    - Versión inicial.
 
 
 
