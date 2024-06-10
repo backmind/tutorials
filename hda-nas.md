@@ -1,5 +1,5 @@
-[center][img]https://github.com/backmind/tutorials/hda-nas-assets/sayIUuD.jpg[/img][/center]
-[center][↑ HDA-NAS](#indice) [b]|[/b] [url=https://github.com/backmind/tutorials/hda-serv.md]HDA-SERV →[/url] [b]|[/b] [url=/dev/null]HDA-DOCKER →→[/url][/center]
+![](https://github.com/backmind/tutorials/hda-nas-assets/sayIUuD.jpg)
+[↑ HDA-NAS](#indice) [b]|[/b] [url=https://github.com/backmind/tutorials/hda-serv.md]HDA-SERV →[/url] [b]|[/b] [url=/dev/null]HDA-DOCKER →→[/url]
 Buenas, queridos mediavidensis,
 
 Según recomendación de @lecherito me he lanzado a desarrollar un diario, seguimiento de la idea y creación del que será mi NAS personal y para largo plazo. Algo parecido a estos hilos [[1](https://www.mediavida.com/foro/hard-soft/montando-mi-nas-661763)], [[2](https://www.mediavida.com/foro/dev/automatizacion-diario-lecherito-655829)], [[3](https://www.mediavida.com/foro/dev/automatizacion-ideas-655560)]. Desglosaré este viaje en diferentes hilos y subforos. El objetivo es dejar registrados los pasos que voy siguiendo de modo que me sirva en un futuro, pero también para que sirva como punto de interés por si otras personas se atreven a lanzarse. También es mi idea ir presentando diferentes dudas que tengo y pediros recomendaciones. Este hilo trata sobre el hardware para el NAS.
@@ -45,9 +45,9 @@ Por ejemplo, he perdido todos los programas de Podcast que hice allá en 2007 pa
 
 Cabe resaltar que en 2008 tuve una pérdida similar de 400 Gb (que al cambio serían los 5.5 Tb de hoy, supongo). La historia de esta pérdida, que ya no siento tan profundamente gracias a mi memoria, tiene su "gracia": Un compañero de clan del Counter Strike, @chunite, me vendió por unos 80€ su antiguo ordenador, pero sin caja. Para mí fue un alivio enorme pasar de los 6-8 FPS de agua en de_aztec a casi 40. Como estaba sin caja, yo tenía este ordenador dispuesto sobre la mesa y lo encendía haciendo corto con un desatornillador.
 <a name="imagen1"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/95CVlFm.jpg)
+![](https://github.com/backmind/tutorials/hda-nas-assets/95CVlFm.jpg)
 
-*Imagen 1. Precario ordenador personal que en 2008 llevo a una gran pérdida de datos.*[/center]
+*Imagen 1. Precario ordenador personal que en 2008 llevo a una gran pérdida de datos.*
 
 El PC montaba una controladora IDE-PCI (tal como se aprecia en la  [Imagen 1](#imagen)) con varios discos duros apilados unos sobre otros. La razón de la existencia de tanto disco duro es por haber ido a muchas *Lan parties*. Al principio íbamos con  CDs, luego con DVDs, pero finalmente lo más cómodo fueron los discos duros. Pues bien, mi queridísimo amigo @DarkKonum, quien por aquella época estaba con la carrera de informática, tuvo a bien advertirme de que no dispusiese de los discos duros de ese modo, apilados, dado que disiparían mal el calor y podría afectar a su funcionamiento.
 
@@ -95,9 +95,9 @@ He perdido 5.5 Tb de datos. Estos datos fueron registrados/creados desde 2008 ha
 
 Para calcular  burdamente mi uso de datos a 10 años vista, tendré en cuenta que si he creado 5.5 Tb de datos en los últimos 14 suponen linealmente unos 400 Gb anuales. Si ahora calculamos la función exponencial con estos 400 Gb y la tasa de crecimiento entre 0.4 y 0.5... en los próximos 10 años podría aproximar mi creación de datos entre 22 y 60 Tb. Así que una configuración de 32 Tb, [expandible](https://www.synology.com/en-us/products/DX517#specs) en el Synology 920+ a través de e-Sata por un [DAS](https://es.wikipedia.org/wiki/Almacenamiento_de_conexi%C3%B3n_directa) (almacenamiento de conexión directa o ***D**irect **A**ttached **S**torage* en inglés, un conjunto de discos duros), no es un mal lugar donde empezar.
 <a name="imagen2"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/IzzpiSw.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/IzzpiSw.png)
 
-*Imagen 2. Tendencia de la* dataesfera *global. Seagate [[9](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf)]*[/center]
+*Imagen 2. Tendencia de la* dataesfera *global. Seagate [[9](https://www.seagate.com/files/www-content/our-story/trends/files/idc-seagate-dataage-whitepaper.pdf)]*
 
 Tal como he establecido con anterioridad, pretendo **montar una copia reflejo de mi disco duro de datos**, pero también deseo montar **una nube privada virtual** tanto para mí como para mi pareja. Seguiré usando nubes propietarias para continuar guardando lo sensible y lo que deba ser compartido intra-empresa. Me gustaría no tener que volver a tocar Dropbox de forma personal y cotidiana. De hecho, las limitaciones de espacio y de número de dispositivos vinculados de Dropbox son bastante malas de un tiempo a esta parte, además de que me parece un software muy intrusivo. Por último, tanto Dropbox como GDrive como OneDrive realizan escaneos sobre los datos que sus usuarios alojan en la nube. No tengo nada que esconder, pero la privacidad es un hito. A este respecto, es posible que me monte mi propio GitLab.
 <a name="modelo"></a>
@@ -120,15 +120,15 @@ La baja tasa de vibración y de calor lo convierte en un **disco suficientemente
 
 Una de las cosas que más me ha sorprendido al aventurarme a este proyecto es el descubrir sobre la existencia de [BTRFS](https://es.wikipedia.org/wiki/Btrfs), que por descontado muchos conoceréis. Siendo mi trasfondo no de sistemas, me ha parecido una delicia. **BTRFS es un sistema de formato de archivos desarrollado por Oracle** muy, muy interesante. Los sistemas a los que estamos acostumbrados suelen ser extFAT, NTFS o EXT4, por ejemplo. Estos funcionan  mediante tablas que relacionan  los archivos en el disco/partición (y su jerarquía) con su dirección física en el disco duro (sector) (cfr. [Imagen 3](#imagen3)), en sistemas de archivos de Windows (NTFS, Fat...) se usa *[mft](http://ntfs.com/ntfs-mft.htm)*, en sistemas de archivos de Unix (EXT...), *[inode](https://en.wikipedia.org/wiki/Inode_pointer_structure)*. 
 <a name="imagen3"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/nqWqLay.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/nqWqLay.png)
 
-*Imagen 3. Esquema de tablas con la relación de archivos en NTFS (izquierda) y EXT (derecha). Imagen adaptada de [ntfs.com](http://ntfs.com/ntfs-mft.htm) y [Wikipedia](https://en.wikipedia.org/wiki/Inode_pointer_structure).*[/center]
+*Imagen 3. Esquema de tablas con la relación de archivos en NTFS (izquierda) y EXT (derecha). Imagen adaptada de [ntfs.com](http://ntfs.com/ntfs-mft.htm) y [Wikipedia](https://en.wikipedia.org/wiki/Inode_pointer_structure).*
 
 Tanto en mft como en inode, cuando se crea un archivo se guarda su nombre, su jerarquía en y se registra dónde los datos almacenados comienzan físicamente en el disco (sector). Al editar un archivo y guardarlo, este enlace entre el nombre del archivo en la tabla y su dirección física en el disco duro se cambia: ahora el archivo apunta a esta otra dirección. El espacio antiguo del disco se marca como disponible para escritura. En esto radica la posibilidad de poder recuperar archivos borrados siempre y cuando su dirección física no haya sido reasignada a nuevos datos, escaneando la superficie del disco. Podríamos charlar sobre lo que es el tamaño de sector y de lo que significa la fragmentación, etc., pero eso sería desviarnos del tema.
 <a name="imagen4"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/ViSFMyH.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/ViSFMyH.png)
 
-*Imagen 4. Esquema BTRF en disco [[12](https://docs.docker.com/storage/storagedriver/btrfs-driver/)]*[/center]
+*Imagen 4. Esquema BTRF en disco [[12](https://docs.docker.com/storage/storagedriver/btrfs-driver/)]*
 
 Lo que BTRFS viene a traernos, en contraste, es un sistema incremental de cambios en los archivos. ¿Qué quiere decir esto? Que yo guardo un archivo hoy, mañana lo edito y lo vuelvo a guardar, y lo que ocurre es que se crea un nuevo apunte en el disco indicando qué ha cambiado sobre la información que había guardado ayer. Es decir, en contraste con los sistemas usuales donde se guardaría enteramente el archivo editado en un nuevo espacio de memoria, con **BTRFS lo que hacemos es registrar los cambios sobre lo que había guardado** (cfr. [Imagen 4](#imagen4)). Esto supone una mejora sustancial, porque **podemos reconstruir en el tiempo las diferentes versiones (deltas) de un archivo**. Además, para cada apunte sobre un archivo o sus actualizaciones, podemos disponer de un **checksum y así comprobar la integridad de la información/modificaciones en el tiempo**, lo que otorga un control sobre posibles bitflips y degradaciones de memoria [[13](https://en.wikipedia.org/wiki/Data_degradation)], [[14](https://en.wikipedia.org/wiki/Single-event_upset)].
 <a name="raid"></a>
@@ -136,9 +136,9 @@ Lo que BTRFS viene a traernos, en contraste, es un sistema incremental de cambio
 
 ¿Qué es un **RAID**? Grosso modo un sistema [RAID](https://es.wikipedia.org/wiki/RAID) es un tipo de arreglo de configuración entre los discos duros. Las siglas atienden a ***R**edundant **A**rray of **I**ndependent **D**isks*, es decir un grupo redundante de discos duros independientes. Dependiendo del objetivo, existen varias formas estándar de RAID, siendo las más famosas, RAID 0, RAID 1, y RAID 5. Para comprender bien de lo que estamos hablando haré una muy breve explicación sobre estas configuraciones.
 <a name="imagen5"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/NpaRz2B.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/NpaRz2B.png)
 
-*Imagen 5. Esquemas de RAID 0, RAID 1 y RAID 5, respectivamente. Imagen adaptada de  [Wikipedia](https://es.wikipedia.org/wiki/RAID)*[/center]
+*Imagen 5. Esquemas de RAID 0, RAID 1 y RAID 5, respectivamente. Imagen adaptada de  [Wikipedia](https://es.wikipedia.org/wiki/RAID)*
 
 - **RAID 0**: suma directa de dos o más discos duros. Nótese cómo las partes de información de un mismo archivo se reparten indistintamente entre los discos (cfr. [Motivacion](#motivacion)) y de aquellos barros estos lodos.
 - **RAID 1**: copia reflejo de un disco en al menos otro disco (cfr. [Imagen 5](#imagen5)). La información es duplicada por el número de discos del sistema, así que si falla un disco existe respaldo en el otro. Tiene la ventaja de que la lectura es tantas veces rápida como el número de discos del conjunto, pero la escritura es la misma que un solo disco. Además, el tamaño del conjunto es igual al disco de menor tamaño del conjunto, el resto de memoria no se aprovecha.
@@ -163,7 +163,7 @@ Con este arreglo, no óptimo por los tamaños de los discos elegidos, tendríamo
 
 En contraste, con RAID 5 tendríamos: 4 Tb útiles con 2 Tb de redundancia y 8 Tb perdidos. Con RAID 1 tendríamos 2 Tb útiles con 2+2 Tb de redundancia y 8 Tb perdidos y con RAID 0 tendríamos 14 Tb útiles con 0 Tb de redundancia. Sintetizo este ejemplo en la [Tabla 1](#tabla1):
 <a name="tabla1"></a>
-[center]
+
 | RAID  | DISPONIBLE | REDUNDANCIA | PERDIDO |
 |-------|------------|-------------|---------|
 | SHR   | 6          | 2+2         | 4       |
@@ -171,7 +171,7 @@ En contraste, con RAID 5 tendríamos: 4 Tb útiles con 2 Tb de redundancia y 8 T
 | RAID 1 | 2          | 2+2         | 8       |
 | RAID 0 | 14         | 0           | 0       |
 
-*Tabla 1. Ejemplo de diferentes sistemas de RAID para la configuración de 3 discos duros de tamaños 8 Tb, 4 Tb y 2 Tb, indicando la cantidad de memoria aprovechada, la destinada a redundancia y la perdida.*[/center]
+*Tabla 1. Ejemplo de diferentes sistemas de RAID para la configuración de 3 discos duros de tamaños 8 Tb, 4 Tb y 2 Tb, indicando la cantidad de memoria aprovechada, la destinada a redundancia y la perdida.*
 
 Nota: Cuando ya había escrito todo este ejemplo he encontrado una imagen sobre lo mismo pero con un ejemplo diferente, la pondría aquí pero por la diferencia en los ejemplos no aclararía, así que solo la [enlazo](https://github.com/backmind/tutorials/hda-nas-assets/Ufy9xT4.jpg).
 
@@ -189,9 +189,9 @@ Como última parte de este hilo hablaré de la muy sencilla instalación del pro
 ### 6.1 - Chequeo de los discos duros: 1º FASE
 Los discos me llegaron antes que el NAS. He de decir que llegaron cada uno en una bolsa antiestática y punto. Había leído en [Amazon](https://www.amazon.es/product-reviews/B0832BL1HC/ref=acr_dp_hist_1?ie=UTF8&filterByStar=one_star&reviewerType=all_reviews#reviews-filter-bar) que la gente los recibía así, pero no me lo creía. En efecto, me llegaron 3 discos duros en un sobre de papel sin acolchar, y estos discos cada uno en una simple bolsa antiestática. El cuarto disco me llegó también en una bolsa antiestática, pero en una caja. Muy mal para Amazon aquí, pues es quien vendía y enviaba el producto.
 <a name="imagen6"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/WXPaVg7.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/WXPaVg7.png)
 
-*Imagen 6. Test de lectoescritura en CrystalDiskMark para sendos 4 discos duros. Nótese que las velocidades de lectoescritura están limitadas por el interfaz USB.*[/center]
+*Imagen 6. Test de lectoescritura en CrystalDiskMark para sendos 4 discos duros. Nótese que las velocidades de lectoescritura están limitadas por el interfaz USB.*
 
 Todos sabemos lo sensibles que son los discos mecánicos a los golpes y a las vibraciones, así que actué de la siguiente manera: Lo primero que hice fue un chequeo visual de la integridad externa de cada disco duro. No había desperfectos, menos mal. Después los conecté uno a uno a mi ordenador personal a través de una interfaz USB3-SATA [[Az](https://www.amazon.es/gp/product/B016UBXH3O)] para testarlos. Nada más conectarlos lo primero en lo que me fijé fue en el sonido siendo en todos los casos normal. Lo siguiente fue centrarme en los valores [S.M.A.R.T](https://es.wikipedia.org/wiki/S.M.A.R.T.) de cada uno de ellos mediante el [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo/). Esta palabra viene de ***S**elf **M**onitoring **A**nalysis and **R**eporting **T**echnology*, un sistema de autoanálisis estándar que integran la ya totalidad de discos duros.
 
@@ -205,9 +205,9 @@ Una vez el NAS estuvo en mi poder procedí a instalar los discos, arrancar por v
 
 Esta parte fue sencilla: apagué el aparato, lo abrí e inserté el módulo. Al reiniciar el DSM pude ver que se reconocía correctamente la totalidad de los 8 Gb de RAM (4 Gb soldados en placa más los 4 Gb recién instalados). Para realizar una prueba de integridad en la RAM tuve que instalar el [Synology Asystant](https://kb.synology.com/es-mx/DSM/help/Assistant/assistant?version=6) (cfr. [Imagen 7](#imagen7)) en mi ordenador personal y una vez reconocido el NAS lanzar mediante LAN el test de RAM.
 <a name="imagen7"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/LlJ8g4Q.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/LlJ8g4Q.png)
 
-*Imagen 7. Captura de pantalla del Synology Asystan habiendo reconocido correctamente el Synology 920+. Nótese del menú emergente la opción de "Prueba de memoria".*[/center]
+*Imagen 7. Captura de pantalla del Synology Asystan habiendo reconocido correctamente el Synology 920+. Nótese del menú emergente la opción de "Prueba de memoria".*
 
 Como es lógico, esto reinicia el sistema para dejar casi completamente vacía la RAM y comienza a realizar la prueba. En concreto también desconozco cómo funciona esta prueba técnica, pero la forma usual es hacer barridos en la RAM llenándolos de un valor para luego comprobar que los valores son persistentes. Llevó un par de horas (?) y finalizó correctamente.
 <a name="instalacionm2"></a>
@@ -219,9 +219,9 @@ Para terminar la instalación del hardware, lo último fue instalar el M.2 SSD q
 
 Muchas gracias por acompañarme hasta aquí. Hemos recorridola selección del NAS, de la ampliación de RAM, de la selección de M.2. para cache y de los discos duros de datos y su arreglo de formato y RAID. Mediante este hilo podéis seguir el discurso de pensamiento y acción que he llevado para la adquisición de mi NAS de respaldo a medio y largo plazo, y microservicios. Nunca, y digo, NUNCA más permitiré que me vuelva a ocurrir una pérdida de datos como la que he sufrido o, al menos, haré todo lo que pueda para que no vuelva a pasar.  Espero que os haya sido entretenido.
 <a name="imagen8"></a>
-[center]![](https://github.com/backmind/tutorials/hda-nas-assets/ojk8rtc.png)
+![](https://github.com/backmind/tutorials/hda-nas-assets/ojk8rtc.png)
 
-*Imagen 8. Captura de pantalla con la información del hardware final del Synology DS920+ HDA-NAS.*[/center]
+*Imagen 8. Captura de pantalla con la información del hardware final del Synology DS920+ HDA-NAS.*
 
 <a name="futuro"></a>
 ### 7.1 - Para el futuro
@@ -259,5 +259,5 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 
 
 
-[img]https://github.com/backmind/tutorials/hda-nas-assets/x2OCV3r.png[/img]
+![](https://github.com/backmind/tutorials/hda-nas-assets/x2OCV3r.png)
 Esta obra está bajo una licencia Reconocimiento-No comercial 4.0 de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/deed.es o envíe una carta a Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.
