@@ -1,5 +1,6 @@
 ![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/sayIUuD.jpeg)
 [↑ HDA-NAS](#indice) **|** [HDA-SERV →](https://github.com/backmind/tutorials/hda-serv.md) **|** [HDA-DOCKER →→](/dev/null)
+
 Buenas, queridos mediavidensis,
 
 Según recomendación de @lecherito me he lanzado a desarrollar un diario, seguimiento de la idea y creación del que será mi NAS personal y para largo plazo. Algo parecido a estos hilos [[1](https://www.mediavida.com/foro/hard-soft/montando-mi-nas-661763)], [[2](https://www.mediavida.com/foro/dev/automatizacion-diario-lecherito-655829)], [[3](https://www.mediavida.com/foro/dev/automatizacion-ideas-655560)]. Desglosaré este viaje en diferentes hilos y subforos. El objetivo es dejar registrados los pasos que voy siguiendo de modo que me sirva en un futuro, pero también para que sirva como punto de interés por si otras personas se atreven a lanzarse. También es mi idea ir presentando diferentes dudas que tengo y pediros recomendaciones. Este hilo trata sobre el hardware para el NAS.
