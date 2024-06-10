@@ -1,9 +1,9 @@
-![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/yV7A3LJ.jpeg)
+![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/yV7A3LJ.jpg)
 [← HDA-NAS](https://github.com/backmind/tutorials/hda-nas.md) **|** [↑ HDA-SERV](#indice) **|** [HDA-DOCKER →](/dev/null)
 
 Buenas de nuevo, queridos mediavidensis,
 
-Allá en febrero del 22 [monté un hilo](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087) sobre la adquisición de un NAS para backup en casa. En aquel hilo caminé pormenorizadamente por el concepto de NAS, la selección del mismo, el hardware, y los discos duros. Terminaba aquel hilo indicando que sería el primero en una serie de tres: 1) [Hardware](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087), 2) [Configuración](https://www.mediavida.com/foro/hard-soft/hda-serv-configuracion-705890 del sistema), y 3) [Microservicios](dev/null). Pues bien, este que tenéis delante es el segundo hilo de la saga, el de la configuración del sistema. 
+Allá en febrero del 22 [monté un hilo](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087) sobre la adquisición de un NAS para backup en casa. En aquel hilo caminé pormenorizadamente por el concepto de NAS, la selección del mismo, el hardware, y los discos duros. Terminaba aquel hilo indicando que sería el primero en una serie de tres: 1) [Hardware](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087), 2) [Configuración](https://www.mediavida.com/foro/hard-soft/hda-serv-configuracion-705890) del sistema, y 3) [Microservicios](dev/null). Pues bien, este que tenéis delante es el segundo hilo de la saga, el de la configuración del sistema. 
 
 La razón de la existencia de este hilo es que conforme iba instalando todo, también iba documentándolo. Así que mi propósito es adaptar un poco las notas que he ido tomando para compartirlas con vosotros. Seguro que muchos podrán aportar y recomendar diferentes cosas, ¡y agradecido de antemano quedo! He intentado mantener hipervínculos a las fuentes que he ido recorriendo, de tal guisa que no entro en la explicación de cada uno de los pasos a bajo nivel. Si queréis saber más sobre algo específico podéis acceder al hipervínculo asociado. Por último, esta instalación está hecha para mi caso de uso, mis necesidades y mi entorno. Lo bueno de los sistemas \*nix es que son harto configurables, por lo que cada uno puede encontrar la solución que más se le ajuste y le guste.
 
@@ -18,36 +18,36 @@ Algunas partes de la configuración son extensas. Además, como esta configuraci
 # 1. - Índice
 1. [Índice](#indice)
 2. [Preámbulo](#preambulo)
-2.1 [Motivación](#motivacion)
-2.2 [¿Qué es un homelab?, ¿por qué un homelab?](#homelab)
-2.3 [Hardware](#hardware)
-3. [Primeros pasos](#primerospasos)
-3.1 [Sources list](#sources)
-3.2 [Sudo](#sudo)
-3.3 [SSH config](#ssh)
-3.4 [Firewall](#firewall)
-3.5 [Wake on lan](#wol)
-3.6 [Restos de la configuración básica](#basica)
-4. [Macroconfiguración de zsh](#zsh)
-4.1 [Instalando el core](#zshcore)
-4.2 [oh-my-zsh plugins](#zshplugins)
-4.3 [Configurando .zshrc](#zshrc)
-5. [Instalando CUDA drivers](#cuda)
-6. [Instalando zfs](#zfs)
-6.1 [Crear un pool de cero](#pool)
-6.2 [Montar un volumen](#volumen)
-7. [Samba](#samba)
-7.1 [Configurando las opciones globales de Samba](#sambacfg)
-7.2 [Creando directorios compartidos de Samba](#sambadir)
-7.3 [Creando Samba Share User y grupo](#sambausr)
-8. [Docker](#docker)
-8.1 [Instalación de Docker](#dockerinst)
-8.2 [Docker rootless mode](#dockerrootless)
-8.3 [Nvidia docker toolkit](#dockernvidia)
-9. [Servidor DNS Pi-Hole](#pihole)
-10. [Palabras finales](#final)
-10.1 [Para el futuro](#futuro)
-10.2. [¡Continúa con la serie!](#continua)
+    2.1 [Motivación](#motivacion)
+    2.2 [¿Qué es un homelab?, ¿por qué un homelab?](#homelab)
+    2.3 [Hardware](#hardware)
+4. [Primeros pasos](#primerospasos)
+    3.1 [Sources list](#sources)
+    3.2 [Sudo](#sudo)
+    3.3 [SSH config](#ssh)
+    3.4 [Firewall](#firewall)
+    3.5 [Wake on lan](#wol)
+    3.6 [Restos de la configuración básica](#basica)
+5. [Macroconfiguración de zsh](#zsh)
+    4.1 [Instalando el core](#zshcore)
+    4.2 [oh-my-zsh plugins](#zshplugins)
+    4.3 [Configurando .zshrc](#zshrc)
+6. [Instalando CUDA drivers](#cuda)
+7. [Instalando zfs](#zfs)
+    6.1 [Crear un pool de cero](#pool)
+    6.2 [Montar un volumen](#volumen)
+8. [Samba](#samba)
+    7.1 [Configurando las opciones globales de Samba](#sambacfg)
+    7.2 [Creando directorios compartidos de Samba](#sambadir)
+    7.3 [Creando Samba Share User y grupo](#sambausr)
+9. [Docker](#docker)
+    8.1 [Instalación de Docker](#dockerinst)
+    8.2 [Docker rootless mode](#dockerrootless)
+    8.3 [Nvidia docker toolkit](#dockernvidia)
+10. [Servidor DNS Pi-Hole](#pihole)
+11. [Palabras finales](#final)
+    10.1 [Para el futuro](#futuro)
+    10.2. [¡Continúa con la serie!](#continua)
 
 <a name="preambulo"></a>
 # 2. - Preámbulo [↑](#indice)
@@ -75,17 +75,17 @@ Lo que haré será reaprovechar mi ordenador antiguo intentando gastar poco en s
 A continuación listaré pero no entraré en las especificaciones técnicas del hardware final, como sí hiciera [en el hilo anterior](https://github.com/backmind/tutorials/hda-nas.md#hardware).
 
 #### Especificaciones técnicas
-OS: [Debian 12](https://www.debian.org/)
-CPU: [Intel i7 7700 k](https://www.intel.com/content/www/us/en/products/sku/97129/intel-core-i77700k-processor-8m-cache-up-to-4-50-ghz/specifications.html)
-GPU: [Gigabyte AORUS GeForce RTX 3080 MASTER (Rev.1.0) 10GB GDDR6](https://www.gigabyte.com/es/Graphics-Card/GV-N3080AORUS-M-10GD-rev-10#kf)
-MOBO: [Asus ROG STRIX Z270E GAMING](https://rog.asus.com/motherboards/rog-strix/rog-strix-z270e-gaming-model/)
-PSU: [Corsair RMX750 80 Plus Gold 750W](https://www.corsair.com/eu/es/p/psu/cp-9020179-eu/rmx-series-rm750x-750-watt-80-plus-gold-certified-fully-modular-psu-eu-cp-9020179-eu)
-RAM: 4 × 8 Gb (32 Gb) [KFA2 HOF Hall Of Fame 3600MHz (PC4-28800) CL17](https://www.profesionalreview.com/2016/12/02/kfa2-hof-ddr4-review/)
-HDD M.2: 2 × 1000 Gb (2 Tb) [Samsung SSD 970 EVO Plus](https://www.samsung.com/es/memory-storage/nvme-ssd/970-evo-plus-1tb-mz-v7s1t0bw/) + [Crucial CT1000P1SSD8](https://content.crucial.com/content/dam/crucial/ssd-products/p1/flyer/crucial-p1-nvme-m2-ssd-productflyer.pdf)
-\* HDD SATA: 2 × 18 Tb (36 Tb) [EXOS x18 Enterprise](https://www.seagate.com/es/es/products/enterprise-drives/exos-x/x18/)
-\* NIC:  1 × [TP-Link TX401) (10 Gb RJ45](https://www.tp-link.com/es/home-networking/adapter/tx401/)
+- OS: [Debian 12](https://www.debian.org/)
+- CPU: [Intel i7 7700 k](https://www.intel.com/content/www/us/en/products/sku/97129/intel-core-i77700k-processor-8m-cache-up-to-4-50-ghz/specifications.html)
+- GPU: [Gigabyte AORUS GeForce RTX 3080 MASTER (Rev.1.0) 10GB GDDR6](https://www.gigabyte.com/es/Graphics-Card/GV-N3080AORUS-M-10GD-rev-10#kf)
+- MOBO: [Asus ROG STRIX Z270E GAMING](https://rog.asus.com/motherboards/rog-strix/rog-strix-z270e-gaming-model/)
+- PSU: [Corsair RMX750 80 Plus Gold 750W](https://www.corsair.com/eu/es/p/psu/cp-9020179-eu/rmx-series-rm750x-750-watt-80-plus-gold-certified-fully-modular-psu-eu-cp-9020179-eu)
+- RAM: 4 × 8 Gb (32 Gb) [KFA2 HOF Hall Of Fame 3600MHz (PC4-28800) CL17](https://www.profesionalreview.com/2016/12/02/kfa2-hof-ddr4-review/)
+- HDD M.2: 2 × 1000 Gb (2 Tb) [Samsung SSD 970 EVO Plus](https://www.samsung.com/es/memory-storage/nvme-ssd/970-evo-plus-1tb-mz-v7s1t0bw/) + [Crucial CT1000P1SSD8](https://content.crucial.com/content/dam/crucial/ssd-products/p1/flyer/crucial-p1-nvme-m2-ssd-productflyer.pdf)
+- HDD SATA: 2 × 18 Tb (36 Tb) [EXOS x18 Enterprise](https://www.seagate.com/es/es/products/enterprise-drives/exos-x/x18/)
+- NIC:  1 × [TP-Link TX401) (10 Gb RJ45](https://www.tp-link.com/es/home-networking/adapter/tx401/)
 
-\* Quitando los ventiladores y el disipador, por manteminiento, esto es lo único que he comprado para metamorfosear mi antigua battlestation en un servidor.
+Quitando los ventiladores y el disipador, por manteminiento, esto es lo único que he comprado para metamorfosear mi antigua battlestation en un servidor.
 <a name="sobrered"></a>
 #### Sobre la red
 Recientemente, he actualizado mi LAN y mi WAN a 10 Gb, razón por la que le he metido este NIC al servidor. Mi PC de trabajo va con un [NIC 10G integrado](https://www.asus.com/motherboards-components/motherboards/proart/proart-x670e-creator-wifi/), y al NAS le puse un NIC de 5 Gb por usb 3.0 ([QNAP QNA-UC5G1T](https://www.qnap.com/en/product/qna-uc5g1t)). Estos dispositivos van a un HUB tonto de 10G ([TL-X105](https://www.tp-link.com/es/business-networking/unmanaged-switch/tl-sx105/)), que conecta al único puerto 10G que monta el router ([ZTE F8648P](https://www.zte.com.cn/global/product_index/smart_home_en/ont/zxhn-f8648p0/zxhn-f8648p.html)) de mi ISP (DIGI). Como varios de los servicios que pretendo consumen ancho de banda, para mí era relevante actualizar la LAN y la WAN. Mi intención es que el servidor gestione todas las conexiones de mis dispositivos a través de [openVPN](https://openvpn.net/). Es decir, toda navegación, desde los vídeos en los móviles hasta las películas en netflix 4k, sin olvidar los [backups](https://www.synology.com/en-global/dsm/feature/active-backup-business/pc diarios hacia el NAS), pasarán por el servidor, pudiendo haber concurrencia. También es importante para temas de torrent/seedbox, así como para [Plex](https://www.plex.tv/personal-media-server/ )y algún servidor de juegos que pretendo. 
@@ -178,6 +178,7 @@ sudo ethtool enp3s0 #chequeamos el interfaz objetivo
 ```
 <a name="imagen1"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/Ddqqv3d.png)
+
 *Imagen 1. Captura de pantalla con la información WOL del NIC.*
 En el caso de que lo sea, [lo activamos con](https://wiki.debian.org/WakeOnLan#Enabling_WOL):
 ```Shell
@@ -640,6 +641,7 @@ sudo zpool import
 ```
 <a name="imagen2"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/ajzh5dQ.png)
+
 *Imagen 2. Captura de pantalla con el listado de los pools zfs del sistema.*
 ### 6.2.2. - Cargar los pools creados
 Solo queda cargar los pools creados. Una vez sabiendo su nombre haces (en mi caso mis pools son *SERV-PROG* y *SERV-DATA*):
@@ -653,6 +655,7 @@ sudo zpool status
 ```
 <a name="imagen3"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/EvntAzt.png)
+
 *Imagen 3. Captura de pantalla con el estado de los pools zfs del sistema.*
 <a name="samba"></a>
 # 7. - Samba [↑](#indice)
@@ -757,6 +760,7 @@ sudo docker run hello-world
 ```
 <a name="imagen4"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/c16lU6p.png)
+
 *Imagen 4. Captura de pantalla con la prueba de funcionamiento de docker.*
 Este no es mal momento para incrementar la [memoria virtual](https://www.elastic.co/guide/en/elasticsearch/reference/current/vm-max-map-count.html) disponible para los contenedores. Para ello añadimos la línea *vm.max_map_count=262144* en */etc/sysctl.conf* y reiniciamos:
 ```bash
@@ -799,6 +803,7 @@ systemctl --user restart docker
 ¡Con esto tenemos docker corriendo rootless! Fíjate en la siguiente captura, no necesitamos "sudo" para desplegar el hello-world. Nótese que no hemos añadido el usuario a un docker group o similar (cosa que puede crear brechas de seguridad).
 <a name="imagen5"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/OybY000.png)
+
 *Imagen 5. Captura de pantalla con la prueba de funcionamiento de rootless docker.*
 <a name="dockernvidia"></a>
 ## 8.3. - Nvidia docker toolkit [↑](#indice)
@@ -827,6 +832,7 @@ docker run --rm --gpus all debian nvidia-smi
 ```
 <a name="imagen6"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/uLeYovr.png)
+
 *Imagen 6. Captura de pantalla con la ejecución de nvidia-smi desde rootless docker.*
 <a name="pihole"></a>
 ### 9. Servidor DNS Pi-Hole [↑](#indice)
@@ -836,8 +842,9 @@ Instalar Pi-Hole es [sencillo](https://www.techaddressed.com/tutorials/installin
 ```bash
 curl -sSL https://install.pi-hole.net | sudo bash
 ```
-<a name="imagen6"></a>
+<a name="imagen7"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/fr2MI8x.png)
+
 *Imagen 7. Captura de pantalla con la ejecución del instalador de pi-hole.*
 Sigue los pasos de instalación al gusto y continuamos configurando. Una vez que esté instalado, lo que debemos hacer es que las DNS del servidor se apunten a sí mismo. Esto lo logramos editando el siguiente archivo:
 ```bash
@@ -852,8 +859,9 @@ Con esto ya tienes el servidor dando la configuración básica de DNS. Si quiere
 <a name="final"></a>
 # 10. - Palabras finales [↑](#indice)
 ¡Felicidades, ya tienes el servidor configurado! Muchas gracias por acompañarme hasta aquí. Tras la instalación del sistema, en este hilo hemos recorrido la configuración básica de un sistema operativo y sus dependencias para montar un homelab/servidor casero. Hemos preparado la configuración básica del sistema, luego una shell actual y cómoda, hemos instalado los drivers de nvidia para poder hacer funcionar cuda. Hemos instalado el sistema de archivos zfs y samba. Y, por último, hemos instalado docker de una forma segura. Mediante este hilo podéis seguir el discurso de pensamiento y acción que he llevado a la composición de mi homelab/servidor casero. Espero que os haya sido entretenido.
-<a name="imagen7"></a>
+<a name="imagen8"></a>
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/4ZBIcm0.png)
+
 *Imagen 8. Captura de pantalla con la entrada en el servidor una vez ya configurado.*
 <a name="futuro"></a>
 ### 10.1. - Para el futuro [↑](#indice)
