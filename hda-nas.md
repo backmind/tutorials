@@ -261,4 +261,5 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 
 
 ![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/x2OCV3r.png)
+
 Esta obra está bajo una licencia Reconocimiento-No comercial 4.0 de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/deed.es o envíe una carta a Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.
