@@ -1,4 +1,4 @@
-![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/sayIUuD.jpg)
+![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/sayIUuD.jpeg)
 [↑ HDA-NAS](#indice) [b]|[/b] [url=https://github.com/backmind/tutorials/hda-serv.md]HDA-SERV →[/url] [b]|[/b] [url=/dev/null]HDA-DOCKER →→[/url]
 Buenas, queridos mediavidensis,
 
@@ -45,7 +45,7 @@ Por ejemplo, he perdido todos los programas de Podcast que hice allá en 2007 pa
 
 Cabe resaltar que en 2008 tuve una pérdida similar de 400 Gb (que al cambio serían los 5.5 Tb de hoy, supongo). La historia de esta pérdida, que ya no siento tan profundamente gracias a mi memoria, tiene su "gracia": Un compañero de clan del Counter Strike, @chunite, me vendió por unos 80€ su antiguo ordenador, pero sin caja. Para mí fue un alivio enorme pasar de los 6-8 FPS de agua en de_aztec a casi 40. Como estaba sin caja, yo tenía este ordenador dispuesto sobre la mesa y lo encendía haciendo corto con un desatornillador.
 <a name="imagen1"></a>
-![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/95CVlFm.jpg)
+![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/95CVlFm.jpeg)
 
 *Imagen 1. Precario ordenador personal que en 2008 llevo a una gran pérdida de datos.*
 
@@ -173,7 +173,7 @@ En contraste, con RAID 5 tendríamos: 4 Tb útiles con 2 Tb de redundancia y 8 T
 
 *Tabla 1. Ejemplo de diferentes sistemas de RAID para la configuración de 3 discos duros de tamaños 8 Tb, 4 Tb y 2 Tb, indicando la cantidad de memoria aprovechada, la destinada a redundancia y la perdida.*
 
-Nota: Cuando ya había escrito todo este ejemplo he encontrado una imagen sobre lo mismo pero con un ejemplo diferente, la pondría aquí pero por la diferencia en los ejemplos no aclararía, así que solo la [enlazo](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/Ufy9xT4.jpg).
+Nota: Cuando ya había escrito todo este ejemplo he encontrado una imagen sobre lo mismo pero con un ejemplo diferente, la pondría aquí pero por la diferencia en los ejemplos no aclararía, así que solo la [enlazo](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/Ufy9xT4.jpeg).
 
 Explicados estos tipos de RAID puedo hablar de RAID 6 y de SHR2. RAID 6 es como RAID 5 pero con doble paridad al igual que SHR-2 es como SHR pero con doble paridad. Esto significa que el conjunto de discos es suficientemente robusto como para perder hasta dos discos de forma simultánea conservando la integridad de la información. **Para mi NAS he escogido un sistema RAID SHR-2**. 
 
