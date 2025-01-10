@@ -196,8 +196,59 @@ foreach ($alias in $poetryAliases.GetEnumerator()) {
 }
 
 # Alias adicionales
-Set-Alias -Name g -Value git
 Set-Alias -Name dc -Value docker-compose
+
+# Alias y funciones para git
+Set-Alias -Name g -Value git
+
+# ga: git add (con comportamiento predeterminado de añadir todo si no se especifica ruta)
+function ga {
+    param(
+        [string]$Path = "."
+    )
+    git add $Path
+}
+
+# gp: git pull
+function gpull {
+    git pull
+}
+
+# gph: git push
+function gpush {
+    git push
+}
+
+# gm: git commit con mensaje
+function gcom {
+    param(
+        [Parameter(Mandatory = $true)][string]$Message
+    )
+    git commit -m $Message
+}
+
+# Funciones para cambiar de directorio rápidamente
+
+function cg {
+    Set-Location -Path "C:\git"
+}
+
+function ~ {
+    Set-Location -Path "~"
+}
+
+function .. {
+    Set-Location -Path ".."
+}
+
+function ... {
+    Set-Location -Path "../.."
+}
+
+function .... {
+    Set-Location -Path "../../.."
+}
+
 
 # ============================
 # Carga de módulos condicional
