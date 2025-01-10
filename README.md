@@ -13,6 +13,6 @@ Sin más dilación:
 [La siguiente](https://github.com/backmind/tutorials/blob/main/hda-serv.md) es una guía sobre cómo montar un homelab server en casa
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/yV7A3LJ.jpg)
 
-# WT+WINGET+PS
-[La siguiente](https://gist.github.com/backmind/7fcba7ebbb25b4d1ee8513b81ac39579) es una pequeña guía (gist, en inglés) sobre cómo configurar de manera chula y útil windows terminal, con winget y powershell
+# HDA-TERM
+[La siguiente](https://github.com/backmind/tutorials/blob/main/hda-term.md) es una pequeña guía (que he actualizado y traducido de un [gist](https://gist.github.com/backmind/7fcba7ebbb25b4d1ee8513b81ac39579) anterior) sobre cómo configurar de manera chula y útil windows terminal, con winget y powershell
 ![](https://user-images.githubusercontent.com/60194650/242429145-611a52f4-f920-4b95-9634-e91680001324.png)
