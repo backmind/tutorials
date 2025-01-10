@@ -1,6 +1,6 @@
 # Configuración de Terminal y PowerShell
 He decidido actualizar y traducir el [gist](https://gist.github.com/backmind/7fcba7ebbb25b4d1ee8513b81ac39579) que tengo sobre la configuración de mi terminal y mi perfil de powershell.
-![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS1.png)![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS2.png)![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS3.png)
+<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS1.png" style="width:25%; height:auto;"><img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS2.png" style="width:25%; height:auto;"><img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SS3.png" style="width:25%; height:auto;">
 Si deseas personalizar tu terminal y experiencia en PowerShell, esta guía te llevará paso a paso a través del proceso. Utilizaremos herramientas como Oh My Posh, Terminal-Icons y PowerShell 7.
 
 **Nota:** Esta guía está diseñada para usuarios de Windows 10 o posterior.
