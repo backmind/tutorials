@@ -1,9 +1,9 @@
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/yV7A3LJ.jpg)
-[← HDA-NAS](https://github.com/backmind/tutorials/hda-nas.md) **|** [↑ HDA-SERV](#indice) **|** [HDA-DOCKER →](/dev/null)
+[← HDA-NAS](https://github.com/backmind/tutorials/blob/main/hda-nas.md) **|** [↑ HDA-SERV](#indice) **|** [HDA-DOCKER →](/dev/null)
 
 Buenas de nuevo, queridos mediavidensis,
 
-Allá en febrero del 22 [monté un hilo](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087) sobre la adquisición de un NAS para backup en casa. En aquel hilo caminé pormenorizadamente por el concepto de NAS, la selección del mismo, el hardware, y los discos duros. Terminaba aquel hilo indicando que sería el primero en una serie de tres: 1) [Hardware](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087), 2) [Configuración](https://www.mediavida.com/foro/hard-soft/hda-serv-configuracion-705890) del sistema, y 3) [Microservicios](dev/null). Pues bien, este que tenéis delante es el segundo hilo de la saga, el de la configuración del sistema. 
+Allá en febrero del 22 [monté un tuto](https://github.com/backmind/tutorials/blob/main/hda-nas.md) sobre la adquisición de un NAS para backup en casa. En aquel hilo caminé pormenorizadamente por el concepto de NAS, la selección del mismo, el hardware, y los discos duros. Terminaba aquel hilo indicando que sería el primero en una serie de tres: 1) [Hardware](https://github.com/backmind/tutorials/blob/main/hda-nas.md), 2) [Configuración](#indice) del sistema, y 3) [Microservicios](dev/null). Pues bien, este que tenéis delante es el segundo hilo de la saga, el de la configuración del sistema. 
 
 La razón de la existencia de este hilo es que conforme iba instalando todo, también iba documentándolo. Así que mi propósito es adaptar un poco las notas que he ido tomando para compartirlas con vosotros. Seguro que muchos podrán aportar y recomendar diferentes cosas, ¡y agradecido de antemano quedo! He intentado mantener hipervínculos a las fuentes que he ido recorriendo, de tal guisa que no entro en la explicación de cada uno de los pasos a bajo nivel. Si queréis saber más sobre algo específico podéis acceder al hipervínculo asociado. Por último, esta instalación está hecha para mi caso de uso, mis necesidades y mi entorno. Lo bueno de los sistemas \*nix es que son harto configurables, por lo que cada uno puede encontrar la solución que más se le ajuste y le guste.
 
@@ -627,7 +627,7 @@ sudo sgdisk --zap-all /dev/DISCO1
 sudo sgdisk --zap-all /dev/DISCON
 ```
 ### Crear un volumen
-Con los discos listos ya puedes crear un volumen (o pool). En la siguiente línea lo hacemos. Fíjate en el final de la línea. Al volúmen le llamaré "SERV-DATA", será una pool en espejo (básicamente una [RAID 1](https://www.mediavida.com/foro/hard-soft/hda-nas-hardware-684087#raid)) con los discos sda y sdb.
+Con los discos listos ya puedes crear un volumen (o pool). En la siguiente línea lo hacemos. Fíjate en el final de la línea. Al volúmen le llamaré "SERV-DATA", será una pool en espejo (básicamente una [RAID 1](https://www..com/foro/hard-soft/hda-nas-hardware-684087#raid)) con los discos sda y sdb.
 ```shell
 sudo zpool create -f -d -o ashift=12 -O atime=off -o feature@lz4_compress=enabled SERV-DATA mirror /dev/sda /dev/sdb
 ```
