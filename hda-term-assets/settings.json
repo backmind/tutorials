@@ -1,0 +1,252 @@
+{
+    "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "actions": [
+        {
+            "command": {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "id": "User.paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "auto",
+                "splitMode": "duplicate"
+            },
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        }
+    ],
+    "copyFormatting": "none",
+    "copyOnSelect": true,
+    "defaultProfile": "{43d6aa02-74c4-5660-88c3-f3a448160ee0}",
+    "disableAnimations": false,
+    "language": "en-US",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
+    "profiles": {
+        "defaults": {
+            "font": {
+                "face": "Consolas"
+            },
+            "opacity": 56,
+            "startingDirectory": ".",
+            "useAcrylic": true
+        },
+        "list": [
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "bellStyle": [
+                    "audible",
+                    "window",
+                    "taskbar"
+                ],
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                "cursorShape": "bar",
+                "experimental.repositionCursorWithMouse": true,
+                "font": {
+                    "face": "SpaceMono Nerd Font",
+                    "size": 12
+                },
+                "guid": "{43d6aa02-74c4-5660-88c3-f3a448160ee0}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+                "name": "Windows PowerShell 7",
+                "padding": "8, 8, 8, 8",
+                "showMarksOnScrollbar": true,
+                "snapOnInput": true
+            },
+            {
+                "closeOnExit": "never",
+                "commandline": "ssh -p 2222 hda@192.168.1.192",
+                "font": {
+                    "face": "SpaceMono Nerd Font"
+                },
+                "guid": "{229c11e9-b36d-5759-8249-4aa3c90cdbf3}",
+                "icon": "C:\\Users\\backm\\Pictures\\hda-serv-ico.png",
+                "name": "HDA-SERV"
+            },
+            {
+                "closeOnExit": "never",
+                "commandline": "ssh hda@192.168.1.198",
+                "font": {
+                    "face": "SpaceMono Nerd Font"
+                },
+                "guid": "{c5cae46c-706e-4ed8-82c5-fdf9666cd78f}",
+                "hidden": false,
+                "icon": "C:\\Users\\backm\\Pictures\\hda-serv-ico.png",
+                "name": "HDA-NAS"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell",
+                "commandline": "%SystemRoot%\\System32\\cmd.exe /K %USERPROFILE%\\\\miniconda3\\\\Scripts\\\\activate.bat",
+                "cursorShape": "bar",
+                "font": {
+                    "size": 12
+                },
+                "guid": "{e9246c24-581c-459c-9883-603c327fb600}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Users\\backm\\Pictures\\icons8-anaconda-240.png",
+                "name": "Conda",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\cmd.exe",
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "hidden": false,
+                "name": "S\u00edmbolo del sistema"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe aws --cli-auto-prompt",
+                "cursorShape": "bar",
+                "font": {
+                    "face": "SpaceMono Nerd Font",
+                    "size": 12
+                },
+                "guid": "{158268b0-dd57-451a-830f-4e3fda50d2ca}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "C:\\Users\\backm\\miniconda3\\bin\\aws-cli-ico.png",
+                "name": "aws-shell",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "colorScheme": "Campbell",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe ssh hda@192.168.1.192",
+                "cursorShape": "bar",
+                "font": {
+                    "face": "SpaceMono Nerd Font",
+                    "size": 12
+                },
+                "guid": "{3bb1828b-17e6-4a87-bcb1-4fda18ecb692}",
+                "hidden": true,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "name": "Windows PowerShell (Copy)",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true
+            },
+            {
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "font": {
+                    "face": "SpaceMono Nerd Font",
+                    "size": 12
+                },
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell 5.1"
+            },
+            {
+                "guid": "{f1222384-e914-5cfb-8f38-11c2b8c3966b}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{4c2b64f0-d16d-5dfd-a9ea-1e8536b72e38}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2019",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": true,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\backm\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\backm\\miniconda3' \"",
+                "name": "Anaconda PowerShell Prompt (miniconda3)",
+                "icon": "C:\\Users\\backm\\miniconda3\\Menu\\anaconda_powershell_prompt.ico",
+                "startingDirectory": "C:\\Users\\backm"
+            },
+            {
+                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\backm\\miniconda3\\Scripts\\activate.bat C:\\Users\\backm\\miniconda3",
+                "name": "Anaconda Prompt (miniconda3)",
+                "icon": "C:\\Users\\backm\\miniconda3\\Menu\\anaconda_prompt.ico",
+                "startingDirectory": "C:\\Users\\backm"
+            }
+        ]
+    },
+    "schemes": [
+        {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-22.04-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        }
+    ],
+    "showTabsInTitlebar": true,
+    "themes": [],
+    "useAcrylicInTabRow": true
+}
