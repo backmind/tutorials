@@ -869,7 +869,7 @@ Ahora que ya tengo el servidor montado y estoy contento, tengo muchas ganas de h
 <a name="continua"></a>
 ### 10.2. - ¡Continúa con la serie! [↑](#indice)
 1. [El primer hilo](https://github.com/backmind/tutorials/hda-nas.md) trata sobre el hardware que he montado y por qué. 
-2. ([este](https://github.com/backmind/tutorials/hda-serv.md)) El segundo hilo trata sobre la configuración básica del sistema. 
+2. ([este](#indice)) El segundo hilo trata sobre la configuración básica del sistema. 
 3. El tercer hilo sobre microservicios personales para proyectos y jugueteos que me gustaría hacer.
 
 ---
