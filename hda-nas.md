@@ -231,8 +231,8 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 <a name="continua"></a>
 ### 7.2 - ¡Continúa con la serie!
 
-1. [Este](https://github.com/backmind/tutorials/hda-nas.md) hilo que os comparto es el primero de una serie de tres que proyecto y trata sobre el hardware que he montado y por qué. 
-2. [El segundo hilo](https://github.com/backmind/tutorials/hda-serv.md) trata sobre la configuración básica de un servidor. 
+1. [Este](#indice) hilo que os comparto es el primero de una serie de tres que proyecto y trata sobre el hardware que he montado y por qué. 
+2. [El segundo hilo](https://github.com/backmind/tutorials/blob/main/hda-serv.md) trata sobre la configuración básica de un servidor. 
 3. El tercer hilo sobre microservicios personales para proyectos y jugueteos que me gustaría hacer.
 
 ---
