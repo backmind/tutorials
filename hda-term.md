@@ -51,7 +51,7 @@ Lo que quiero decir con esto es que lo que comparto puede estar errado. Por favo
 
 ## 2.1 Motivación
 
-<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/IMG1.png" style="width:33%; height:auto;">
+<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/IMG1.png" style="width:100%; height:auto;">
 *Comparativa entre la terminal predeterminada de Windows (izquierda) y nuestra configuración personalizada (derecha), mostrando las diferencias en legibilidad, información contextual y estética.*
 
 Como entusiasta de la informática, siempre he buscado formas de hacer mi interacción con el ordenador más cómoda y eficiente. La línea de comandos es una herramienta fundamental para cualquier persona que trabaje intensivamente con un pc y, en Windows, el terminal predeterminado puede quedarse corto en cuanto a funcionalidades y estética.*
@@ -152,7 +152,7 @@ winget install voidtools.Everything
 ```
 
 # 4. Configuración de fuentes
-<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSFonts.png" style="width:33%; height:auto;">
+<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSFonts.png" style="width:75%; height:auto;">
 *Panel de configuración de fuentes en Windows Terminal mostrando 'SpaceMono NF' seleccionada como fuente predeterminada.*
 
 Para utilizar Oh My Posh con todos sus glifos e iconos necesitarás una [Nerd Font](https://www.nerdfonts.com/). Recomiendo la fuente `SpaceMono NF`, pero puedes escoger la que más te guste.
@@ -182,7 +182,7 @@ Una vez instalada la fuente, necesitas configurarla como predeterminada en Windo
 4. Alternativamente, puedes utilizar directamente el archivo [settings.json](https://github.com/backmind/tutorials/blob/main/hda-term-assets/settings.json) que está en la carpeta hda-term-assets del repositorio como punto de partida para tu configuración
 
 # 5. Temas de Oh My Posh
-<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSTemas.png" style="width:33%; height:auto;">
+<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSTemas.png" style="width:75%; height:auto;">
 *Varios temas de Oh My Posh en acción. De arriba a abajo: powerlevel10k_rainbow, atomic, paradox y jandedobbeleer.*
 
 Oh My Posh ofrece múltiples temas que puedes explorar con el comando `Get-PoshThemes`. [Aquí podéis ver varios ejemplos](https://ohmyposh.dev/docs/themes). Para esta guía, utilizaré uno basado en Powerlevel10k, un tema muy popular por su claridad y funcionalidad.
@@ -316,7 +316,7 @@ Puedes ajustar estos valores según tus preferencias personales.
 # 8. Herramientas avanzadas
 
 ## 8.1 PSFzf: Búsqueda interactiva
-<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSfzf.png" style="width:33%; height:auto;">
+<img src="https://github.com/backmind/tutorials/blob/main/hda-term-assets/SSfzf.png" style="width:75%; height:auto;">
 *PSFzf en acción: búsqueda interactiva en el historial de comandos con Ctrl+R mostrando resultados filtrados en tiempo real.*
 
 [PSFzf](https://github.com/kelleyma49/PSFzf) es una integración de PowerShell con FZF (Fuzzy Finder), que proporciona una búsqueda interactiva incremental:
@@ -447,4 +447,4 @@ Estoy abierto a sugerencias, recomendaciones y mejoras para esta guía. Si tiene
 
 ![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/x2OCV3r.png)
 
-Esta obra está bajo una licencia Reconocimiento-No comercial 4.0 de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/deed.es.
+Esta obra está bajo una licencia Reconocimiento-No comercial 4.0 de Creative Commons. Para ver una copia de esta licencia, visite https://creativecommons.org/licenses/by-nc/4.0/deed.es o envíe una carta a Creative Commons, 171 Second Street, Suite 300, San Francisco, California 94105, USA.
