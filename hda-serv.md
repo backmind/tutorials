@@ -868,8 +868,8 @@ Con esto ya tienes el servidor dando la configuración básica de DNS. Si quiere
 Ahora que ya tengo el servidor montado y estoy contento, tengo muchas ganas de hincharlo a microservicios. Lo cierto es que no pretendo hacer datahoarding y que los 18Tb en espejo debieran ser suficientes por lo pronto; pero no estaría mal proyectar cómo upgradear el juguete. Llevo ya un tiempo pensándolo y creo que mi siguiente paso sería adquirir un pequeño rack e ir montando todos los juguetes en él. Ahora el "barebone" NAS y su SAI, el SAI de mi ordenador de trabajo/servidor junto con el servidor en sí (que va en una ATX), y el hub, ocupan mucho espacio. Cuánto mejor montarlo todo ordenadito en rack, bien ventilado y con posibilidad de expandir con caddies para meter más discos duros, jeje.
 <a name="continua"></a>
 ### 10.2. - ¡Continúa con la serie! [↑](#indice)
-1. [El primer hilo](https://github.com/backmind/tutorials/hda-nas.md) trata sobre el hardware que he montado y por qué. 
-2. ([este](https://github.com/backmind/tutorials/hda-serv.md)) El segundo hilo trata sobre la configuración básica del sistema. 
+1. [El primer hilo](https://github.com/backmind/tutorials/blob/main/hda-nas.md) trata sobre el hardware que he montado y por qué. 
+2. ([este](#indice)) El segundo hilo trata sobre la configuración básica del sistema. 
 3. El tercer hilo sobre microservicios personales para proyectos y jugueteos que me gustaría hacer.
 
 ---
