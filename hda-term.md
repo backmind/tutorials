@@ -15,7 +15,7 @@ Este tuto se engloba en los otros de la serie:
 # Nota
 Antes de continuar, como siempre, debo comentar que no soy ningún experto a bajo nivel en la materia. Tengo nociones de sistemas operativos y línea de comandos, pero para nada soy profesional de sistemas ni de coña. Mi trasfondo es de programador y de físico, aunque siempre he sido entusiasta de la informática y desde pequeño me he dedicado a montar, desmontar y formatear mis ordenadores. Todo esto lo comparto como aficionado que disfruta optimizando su entorno de trabajo para aumentar la eficiencia y la comodidad.
 
-Lo que quiero decir con esto es que lo que comparto puede estar errado. Por favor, si encontráis algún error de contenido o forma, hacédmelo saber ya sea por comentarios o haciéndome un [PR](). Este tutorial es simplemente una guía de configuración para tener un terminal más eficiente y personalizado en Windows.
+Lo que quiero decir con esto es que lo que comparto puede estar errado. Por favor, si encontráis algún error de contenido o forma, hacédmelo saber ya sea por comentarios o haciéndome un [PR](https://github.com/backmind/tutorials). Este tutorial es simplemente una guía de configuración para tener un terminal más eficiente y personalizado en Windows.
 
 # 1. Índice
 1. [Índice](#1-índice)
@@ -441,7 +441,7 @@ He creado este tutorial como parte de mi serie sobre configuraciones personales.
 3. **HDA-TERM** (este tutorial): Configuración de terminal y PowerShell
 4. HDA-SVC (en desarrollo): La capa de aplicación donde el valor práctico se materializa a través de múltiples servicios especializados.
 
-Estoy abierto a sugerencias, recomendaciones y mejoras para esta guía. Si tienes alguna idea o encuentras algún error, no dudes en comentarlo o hacer un PR en el repositorio.
+Estoy abierto a sugerencias, recomendaciones y mejoras para esta guía. Si tienes alguna idea o encuentras algún error, no dudes en comentarlo o hacer un [PR](https://github.com/backmind/tutorials) en el repositorio.
 
 ---
 
