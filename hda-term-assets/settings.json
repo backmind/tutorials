@@ -78,24 +78,24 @@
             },
             {
                 "closeOnExit": "never",
-                "commandline": "ssh -p 2222 hda@192.168.1.192",
+                "commandline": "ssh -p PUERTO usuario@192.168.x.x",
                 "font": {
                     "face": "SpaceMono Nerd Font"
                 },
                 "guid": "{229c11e9-b36d-5759-8249-4aa3c90cdbf3}",
-                "icon": "C:\\Users\\backm\\Pictures\\hda-serv-ico.png",
-                "name": "HDA-SERV"
+                "icon": "C:\\Ruta\\a\\iconos\\servidor-ico.png",
+                "name": "SERVIDOR-1"
             },
             {
                 "closeOnExit": "never",
-                "commandline": "ssh hda@192.168.1.198",
+                "commandline": "ssh usuario@192.168.x.y",
                 "font": {
                     "face": "SpaceMono Nerd Font"
                 },
                 "guid": "{c5cae46c-706e-4ed8-82c5-fdf9666cd78f}",
                 "hidden": false,
-                "icon": "C:\\Users\\backm\\Pictures\\hda-serv-ico.png",
-                "name": "HDA-NAS"
+                "icon": "C:\\Ruta\\a\\iconos\\servidor-ico.png",
+                "name": "SERVIDOR-2"
             },
             {
                 "altGrAliasing": true,
@@ -110,7 +110,7 @@
                 "guid": "{e9246c24-581c-459c-9883-603c327fb600}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Users\\backm\\Pictures\\icons8-anaconda-240.png",
+                "icon": "C:\\Ruta\\a\\iconos\\anaconda-icon.png",
                 "name": "Conda",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
@@ -136,7 +136,7 @@
                 "guid": "{158268b0-dd57-451a-830f-4e3fda50d2ca}",
                 "hidden": false,
                 "historySize": 9001,
-                "icon": "C:\\Users\\backm\\miniconda3\\bin\\aws-cli-ico.png",
+                "icon": "C:\\Ruta\\a\\iconos\\aws-cli-ico.png",
                 "name": "aws-shell",
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
@@ -153,7 +153,7 @@
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "automatic",
                 "colorScheme": "Campbell",
-                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe ssh hda@192.168.1.192",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe ssh usuario@192.168.x.x",
                 "cursorShape": "bar",
                 "font": {
                     "face": "SpaceMono Nerd Font",
@@ -208,16 +208,16 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\backm\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\backm\\miniconda3' \"",
+                "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& '%USERPROFILE%\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate '%USERPROFILE%\\miniconda3' \"",
                 "name": "Anaconda PowerShell Prompt (miniconda3)",
-                "icon": "C:\\Users\\backm\\miniconda3\\Menu\\anaconda_powershell_prompt.ico",
-                "startingDirectory": "C:\\Users\\backm"
+                "icon": "%USERPROFILE%\\miniconda3\\Menu\\anaconda_powershell_prompt.ico",
+                "startingDirectory": "%USERPROFILE%"
             },
             {
-                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\backm\\miniconda3\\Scripts\\activate.bat C:\\Users\\backm\\miniconda3",
+                "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" %USERPROFILE%\\miniconda3\\Scripts\\activate.bat %USERPROFILE%\\miniconda3",
                 "name": "Anaconda Prompt (miniconda3)",
-                "icon": "C:\\Users\\backm\\miniconda3\\Menu\\anaconda_prompt.ico",
-                "startingDirectory": "C:\\Users\\backm"
+                "icon": "%USERPROFILE%\\miniconda3\\Menu\\anaconda_prompt.ico",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
