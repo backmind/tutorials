@@ -458,9 +458,9 @@ Estoy abierto a sugerencias, recomendaciones y mejoras para esta guía. Si tiene
     - Versión final
 - Versión 0.8R0 (10/01/2025)
     - Versión mejorada en tutorial
-- Versión 0.3R1 (15/10/2024)
+- Versión 0.4R1 (15/10/2024)
     - Actualizado el perfil de powershell para el uso de Set-PSReadLineOption
-- Versión 0.3R0 (07/10/2024)
+- Versión 0.4R0 (07/10/2024)
     - Añadido syntax-highlighting
     - Añadido wt-shell-integration
     - Actualizado el perfil de powershell para estos módulos
