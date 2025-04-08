@@ -1,5 +1,5 @@
 ![](https://github.com/backmind/tutorials/blob/main/hda-nas-assets/sayIUuD.jpeg)
-[↑ HDA-NAS](#indice) **|** [HDA-SERV →](https://github.com/backmind/tutorials/blob/main/hda-serv.md) **|** [HDA-DOCKER →→](/dev/null)
+[↑ HDA-NAS](#indice) **|** [HDA-SERV →](https://github.com/backmind/tutorials/blob/main/hda-serv.md) **|** [HDA-TERM →→](https://github.com/backmind/tutorials/blob/main/hda-term.md) **|** [HDA-DOCKER →→→](/dev/null)
 
 Buenas, queridos mediavidensis,
 
@@ -239,7 +239,6 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 
 ### Versión 1.1R2 (26/02/2022)
 
-[ancla]changelog[/ancla]
 ###  Changelog
 - Versión 1.1R2 (04/12/2022)
     - Corregidas un montón de erratas
