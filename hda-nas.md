@@ -238,7 +238,7 @@ Hay algunas cosas con las que, al respecto del hardware, puedo jugar en un futur
 ---
 
 ### Versión 1.1R2 (26/02/2022)
-
+<a name="changelog"></a>
 ###  Changelog
 - Versión 1.1R2 (04/12/2022)
     - Corregidas un montón de erratas
