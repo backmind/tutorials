@@ -1,4 +1,5 @@
 ![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/logo.png)
+[←← HDA-NAS](https://github.com/backmind/tutorials/blob/main/hda-nas.md) **|** [← HDA-SERV](https://github.com/backmind/tutorials/blob/main/hda-serv.md) **|** [↑ HDA-TERM](#indice) **|** [HDA-DOCKER →](/dev/null)
 
 # Configuración de Terminal y PowerShell: Una Guía Completa
 
@@ -444,6 +445,32 @@ He creado este tutorial como parte de mi serie sobre configuraciones personales.
 Estoy abierto a sugerencias, recomendaciones y mejoras para esta guía. Si tienes alguna idea o encuentras algún error, no dudes en comentarlo o hacer un [PR](https://github.com/backmind/tutorials) en el repositorio.
 
 ---
+
+### Versión 1.0R1 (08/04/2025)
+
+<a name="changelog"></a>
+###  Changelog [↑](#indice)
+- Versión 1.0R0 (08/04/2025)
+    - Añadido el changelog
+    - Añadida la barra de navegación
+- Versión 1.0R0 (30/03/2025)
+    - Versión final
+- Versión 0.8R0 (10/01/2025)
+    - Versión mejorada en tutorial
+- Versión 0.3R1 (15/10/2024)
+    - Actualizado el perfil de powershell para el uso de Set-PSReadLineOption
+- Versión 0.3R0 (07/10/2024)
+    - Añadido syntax-highlighting
+    - Añadido wt-shell-integration
+    - Actualizado el perfil de powershell para estos módulos
+- Versión 0.3R0 (30/05/2024)
+    - Añadido PSWindowsUpdate
+    - Actualizado el perfil de powershell para PSWindowsUpdate
+- Versión 0.2R0 (05/06/2023)
+    - Añadidas fuentes
+    - Cambios menores
+- Versión 0.1R0 (01/06/2023)
+    - Versión inicial (gist).
 
 ![](https://github.com/backmind/tutorials/blob/main/hda-term-assets/x2OCV3r.png)
 
