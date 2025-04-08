@@ -1,5 +1,5 @@
 ![](https://github.com/backmind/tutorials/blob/main/hda-serv-assets/yV7A3LJ.jpg)
-[← HDA-NAS](https://github.com/backmind/tutorials/blob/main/hda-nas.md) **|** [↑ HDA-SERV](#indice) **|** [HDA-DOCKER →](/dev/null)
+[← HDA-NAS](https://github.com/backmind/tutorials/blob/main/hda-nas.md) **|** [↑ HDA-SERV](#indice) **|** [HDA-TERM →](https://github.com/backmind/tutorials/blob/main/hda-term.md) **|** [HDA-DOCKER →→](/dev/null)
 
 Buenas de nuevo, queridos mediavidensis,
 
