@@ -18,6 +18,7 @@ Antes de continuar, como siempre, debo comentar que no soy ningún experto a baj
 
 Lo que quiero decir con esto es que lo que comparto puede estar errado. Por favor, si encontráis algún error de contenido o forma, hacédmelo saber ya sea por comentarios o haciéndome un [PR](https://github.com/backmind/tutorials). Este tutorial es simplemente una guía de configuración para tener un terminal más eficiente y personalizado en Windows.
 
+<a name="indice"></a>
 # 1. Índice
 1. [Índice](#1-índice)
 2. [Preámbulo](#2-preámbulo)
